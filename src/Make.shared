@@ -44,6 +44,7 @@ SHARED_SOURCE = \
 	./CoreAnimation/CALayer.cs			\
 	./CoreAnimation/CATextLayer.cs			\
 	./CoreAnimation/CAMediaTimingFunction.cs	\
+	./CoreAnimation/CAEmitterCell.cs		\
 	./CoreFoundation/CFArray.cs                     \
 	./CoreFoundation/CFBoolean.cs                   \
 	./CoreFoundation/CFDictionary.cs                \
