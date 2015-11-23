@@ -54,7 +54,7 @@ namespace NeHeLesson4
 		}
 
 		// Resize And Initialize The GL Window 
-		//      - See also the method in the MyOpenGLView Constructor about the NSView.NSViewGlobalFrameDidChangeNotification
+		//      - See also the method in the MyOpenGLView Constructor about the NSView.GlobalFrameDidChangeNotification
 		public void ResizeGLScene (RectangleF bounds)
 		{
 			// Reset The Current Viewport

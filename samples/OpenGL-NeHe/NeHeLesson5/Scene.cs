@@ -57,12 +57,13 @@ namespace NeHeLesson5
 		{
 			GL.GenTextures (1, textures);
 			GL.BindTexture (TextureTarget.Texture2D, textures [0]);
-			image = CGImage.FromPNG (new CGDataProvider ("/tmp/Mono.png"), null, true, CGColorRenderingIntent.Default);
+			var path = NSBundle.MainBundle.PathForResource ("NeHe", "png");
+			image = CGImage.FromPNG (new CGDataProvider  (path), null, true, CGColorRenderingIntent.Default);
 			Console.WriteLine (image);
 		}
 
 		// Resize And Initialize The GL Window 
-		//      - See also the method in the MyOpenGLView Constructor about the NSView.NSViewGlobalFrameDidChangeNotification
+		//      - See also the method in the MyOpenGLView Constructor about the NSView.GlobalFrameDidChangeNotification
 		public void ResizeGLScene (RectangleF bounds)
 		{
 			// Reset The Current Viewport
